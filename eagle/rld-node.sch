@@ -8702,136 +8702,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-berg" urn="urn:adsk.eagle:library:130">
-<description>&lt;b&gt;Berg Connectors&lt;/b&gt;&lt;p&gt;
-Based on  the following source:
-&lt;ul&gt;
-&lt;li&gt;http://catalog.fciconnect.com
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="PN87520" urn="urn:adsk.eagle:footprint:6141/1" library_version="2">
-<description>&lt;b&gt;USB connector&lt;/b&gt;</description>
-<wire x1="-7.4" y1="-10.19" x2="7.4" y2="-10.19" width="0.254" layer="21"/>
-<wire x1="7.4" y1="-10.19" x2="7.4" y2="4.11" width="0.254" layer="21"/>
-<wire x1="7.4" y1="4.11" x2="-7.4" y2="4.11" width="0.254" layer="21"/>
-<wire x1="-7.4" y1="4.11" x2="-7.4" y2="-10.19" width="0.254" layer="21"/>
-<wire x1="-5.08" y1="-2.87" x2="-3.81" y2="-8.72" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-8.72" x2="-2.54" y2="-8.72" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-8.72" x2="-1.27" y2="-2.87" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-2.87" x2="2.54" y2="-8.72" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-8.72" x2="3.81" y2="-8.72" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-8.72" x2="5.08" y2="-2.87" width="0.1524" layer="21"/>
-<wire x1="-2.46" y1="-0.1" x2="-2.46" y2="0.9" width="0.0508" layer="21" curve="180"/>
-<wire x1="-2.46" y1="-1.1" x2="-2.46" y2="-0.1" width="0.0508" layer="21" curve="180"/>
-<wire x1="3.665" y1="0.4" x2="3.665" y2="-0.6" width="0.0508" layer="21" curve="180"/>
-<wire x1="3.415" y1="0.9" x2="3.415" y2="-1.1" width="0.0508" layer="21" curve="180"/>
-<wire x1="3.665" y1="0.4" x2="4.165" y2="0.4" width="0.0508" layer="21" curve="-15.189287"/>
-<wire x1="3.415" y1="0.9" x2="4.175" y2="0.845" width="0.0508" layer="21" curve="-12.05913"/>
-<wire x1="3.415" y1="-1.1" x2="4.165" y2="-0.975" width="0.0508" layer="21" curve="18.422836"/>
-<wire x1="1.665" y1="-0.35" x2="1.665" y2="0.9" width="0.0508" layer="21" curve="180"/>
-<wire x1="1.29" y1="0.025" x2="1.29" y2="0.4" width="0.0508" layer="21" curve="180"/>
-<wire x1="-3.835" y1="0.9" x2="-3.835" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="-3.835" y1="-1.1" x2="-3.21" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="-3.21" y1="-1.1" x2="-3.21" y2="-0.1" width="0.0508" layer="21"/>
-<wire x1="-3.21" y1="-0.1" x2="-3.21" y2="0.9" width="0.0508" layer="21"/>
-<wire x1="-3.21" y1="0.9" x2="-3.835" y2="0.9" width="0.0508" layer="21"/>
-<wire x1="-3.21" y1="0.9" x2="-2.46" y2="0.4" width="0.0508" layer="21"/>
-<wire x1="-2.46" y1="0.4" x2="-3.21" y2="-0.1" width="0.0508" layer="21"/>
-<wire x1="-3.21" y1="-0.1" x2="-2.46" y2="-0.6" width="0.0508" layer="21"/>
-<wire x1="-2.46" y1="-0.6" x2="-3.21" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="-2.46" y1="-1.1" x2="-3.21" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="-2.46" y1="0.9" x2="-3.21" y2="0.9" width="0.0508" layer="21"/>
-<wire x1="-1.71" y1="0.9" x2="-1.71" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="-1.71" y1="-1.1" x2="0.04" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="0.04" y1="-1.1" x2="0.04" y2="-0.6" width="0.0508" layer="21"/>
-<wire x1="0.04" y1="-0.6" x2="-1.085" y2="-0.6" width="0.0508" layer="21"/>
-<wire x1="-1.085" y1="-0.6" x2="-1.085" y2="-0.35" width="0.0508" layer="21"/>
-<wire x1="-1.085" y1="-0.35" x2="0.04" y2="-0.35" width="0.0508" layer="21"/>
-<wire x1="0.04" y1="-0.35" x2="0.04" y2="0.15" width="0.0508" layer="21"/>
-<wire x1="0.04" y1="0.15" x2="-1.085" y2="0.15" width="0.0508" layer="21"/>
-<wire x1="-1.085" y1="0.15" x2="-1.085" y2="0.4" width="0.0508" layer="21"/>
-<wire x1="-1.085" y1="0.4" x2="0.04" y2="0.4" width="0.0508" layer="21"/>
-<wire x1="0.04" y1="0.4" x2="0.04" y2="0.9" width="0.0508" layer="21"/>
-<wire x1="0.04" y1="0.9" x2="-1.71" y2="0.9" width="0.0508" layer="21"/>
-<wire x1="0.29" y1="0.9" x2="0.29" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="0.29" y1="-1.1" x2="0.915" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="0.915" y1="-1.1" x2="0.915" y2="-0.35" width="0.0508" layer="21"/>
-<wire x1="0.915" y1="-0.35" x2="1.415" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="1.415" y1="-1.1" x2="2.165" y2="-1.1" width="0.0508" layer="21"/>
-<wire x1="2.165" y1="-1.1" x2="1.665" y2="-0.35" width="0.0508" layer="21"/>
-<wire x1="0.915" y1="0.4" x2="0.915" y2="0.025" width="0.0508" layer="21"/>
-<wire x1="0.29" y1="0.9" x2="1.665" y2="0.9" width="0.0508" layer="21"/>
-<wire x1="0.915" y1="0.4" x2="1.29" y2="0.4" width="0.0508" layer="21"/>
-<wire x1="0.915" y1="0.025" x2="1.29" y2="0.025" width="0.0508" layer="21"/>
-<wire x1="3.665" y1="-0.1" x2="4.165" y2="-0.1" width="0.0508" layer="21"/>
-<wire x1="3.665" y1="-0.1" x2="3.665" y2="-0.6" width="0.0508" layer="21"/>
-<wire x1="4.16" y1="0.4" x2="4.16" y2="0.845" width="0.0508" layer="21"/>
-<wire x1="4.165" y1="-0.1" x2="4.165" y2="-0.975" width="0.0508" layer="21"/>
-<pad name="2" x="-1" y="2.71" drill="0.95" shape="long" rot="R90"/>
-<pad name="3" x="1" y="2.71" drill="0.95" shape="long" rot="R90"/>
-<pad name="1" x="-3.5" y="2.71" drill="0.95" shape="long" rot="R90"/>
-<pad name="4" x="3.5" y="2.71" drill="0.95" shape="long" rot="R90"/>
-<text x="-7.62" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="9.144" y="-10.16" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-3.81" y="-2.04" size="0.4064" layer="21">E L E C T R O N I C S</text>
-<hole x="-6.57" y="0" drill="2.3"/>
-<hole x="6.57" y="0" drill="2.3"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="PN87520" urn="urn:adsk.eagle:package:6146/1" type="box" library_version="2">
-<description>USB connector</description>
-<packageinstances>
-<packageinstance name="PN87520"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="J11" urn="urn:adsk.eagle:symbol:6140/1" library_version="2">
-<wire x1="0" y1="7.62" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="0" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<text x="5.08" y="-2.54" size="2.54" layer="94" rot="R90">USB</text>
-<pin name="1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PN87520" urn="urn:adsk.eagle:component:6153/2" prefix="X" uservalue="yes" library_version="2">
-<description>&lt;b&gt;BERG&lt;/b&gt; USB connector</description>
-<gates>
-<gate name="G$1" symbol="J11" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="PN87520">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6146/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="POPULARITY" value="4" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="st-microelectronics" urn="urn:adsk.eagle:library:18661622">
 <packages>
 <package name="UFQFPN48-7X7" urn="urn:adsk.eagle:footprint:18661623/1" locally_modified="yes" library_version="1" library_locally_modified="yes">
@@ -9456,6 +9326,50 @@ Based on  the following source:
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 <rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
 </package>
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90" urn="urn:adsk.eagle:footprint:22310/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X04" urn="urn:adsk.eagle:package:22407/2" type="model" library_version="4">
@@ -9468,6 +9382,18 @@ Based on  the following source:
 <description>PIN HEADER</description>
 <packageinstances>
 <packageinstance name="1X04/90"/>
+</packageinstances>
+</package3d>
+<package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X02"/>
+</packageinstances>
+</package3d>
+<package3d name="1X02/90" urn="urn:adsk.eagle:package:22437/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X02/90"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9483,6 +9409,16 @@ Based on  the following source:
 <pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="PINHD2" urn="urn:adsk.eagle:symbol:22308/1" library_version="4">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9526,69 +9462,37 @@ Based on  the following source:
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="con-molex" urn="urn:adsk.eagle:library:165">
-<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="KK-156-2" urn="urn:adsk.eagle:footprint:8078402/1" library_version="5">
-<description>&lt;b&gt;KK® 396 Header, Vertical, Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/026604020_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
-<wire x1="3.81" y1="4.95" x2="2.01" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="2.01" y1="4.95" x2="-1.985" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-1.985" y1="4.95" x2="-3.785" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-3.785" y1="4.95" x2="-3.785" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="-3.785" y1="-4.825" x2="3.81" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-4.825" x2="3.81" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-1.985" y1="2.525" x2="2.01" y2="2.525" width="0.2032" layer="21"/>
-<wire x1="2.01" y1="2.525" x2="2.01" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-1.985" y1="2.525" x2="-1.985" y2="4.95" width="0.2032" layer="21"/>
-<pad name="1" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="2" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<text x="-4.48" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.75" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="KK-156-2" urn="urn:adsk.eagle:package:8078800/1" type="box" library_version="5">
-<description>&lt;b&gt;KK® 396 Header, Vertical, Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/026604020_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
-<packageinstances>
-<packageinstance name="KK-156-2"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="MV" urn="urn:adsk.eagle:symbol:6783/2" library_version="5">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="KK-156-2" urn="urn:adsk.eagle:component:8079127/3" prefix="X" uservalue="yes" library_version="5">
-<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
+<deviceset name="PINHD-1X2" urn="urn:adsk.eagle:component:22516/4" prefix="JP" uservalue="yes" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
-<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="MV" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="KK-156-2">
+<device name="" package="1X02">
 <connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8078800/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22435/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="MF" value="MOLEX" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="POPULARITY" value="10" constant="no"/>
+<attribute name="POPULARITY" value="98" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22437/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="24" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9664,27 +9568,28 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="RA-02" urn="urn:adsk.eagle:symbol:18697342/2" library_version="2">
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<pin name="VSS" x="-15.24" y="-7.62" length="middle"/>
-<pin name="VDD" x="-15.24" y="-5.08" length="middle"/>
-<pin name="RESET" x="-15.24" y="7.62" length="middle"/>
-<pin name="MISO" x="-15.24" y="5.08" length="middle"/>
-<pin name="MOSI" x="-15.24" y="2.54" length="middle"/>
-<pin name="SCK" x="-15.24" y="0" length="middle"/>
-<pin name="DIO0" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="DIO1" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="DIO2" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="DIO3" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="DIO4" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="DIO5" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<symbol name="RA-02" urn="urn:adsk.eagle:symbol:18697342/3" library_version="3">
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<pin name="VSS" x="-15.24" y="-10.16" length="middle"/>
+<pin name="VDD" x="-15.24" y="-7.62" length="middle"/>
+<pin name="RESET" x="-15.24" y="10.16" length="middle"/>
+<pin name="MISO" x="-15.24" y="2.54" length="middle"/>
+<pin name="MOSI" x="-15.24" y="0" length="middle"/>
+<pin name="SCK" x="-15.24" y="-2.54" length="middle"/>
+<pin name="DIO0" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="DIO1" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="DIO2" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="DIO3" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="DIO4" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="DIO5" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="NSS" x="-15.24" y="7.62" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RA-02" urn="urn:adsk.eagle:component:18698610/1" library_version="2">
+<deviceset name="RA-02" urn="urn:adsk.eagle:component:18698610/2" library_version="3">
 <gates>
 <gate name="G$1" symbol="RA-02" x="0" y="0"/>
 </gates>
@@ -9699,6 +9604,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <connect gate="G$1" pin="DIO5" pad="11"/>
 <connect gate="G$1" pin="MISO" pad="13"/>
 <connect gate="G$1" pin="MOSI" pad="14"/>
+<connect gate="G$1" pin="NSS" pad="15"/>
 <connect gate="G$1" pin="RESET" pad="4"/>
 <connect gate="G$1" pin="SCK" pad="12"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
@@ -9709,6 +9615,630 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con-wago-500" urn="urn:adsk.eagle:library:195">
+<description>&lt;b&gt;Wago Screw Clamps&lt;/b&gt;&lt;p&gt;
+Grid 5.00 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="W237-102" urn="urn:adsk.eagle:footprint:10676/1" library_version="2">
+<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
+<wire x1="-3.491" y1="-2.286" x2="-1.484" y2="-0.279" width="0.254" layer="51"/>
+<wire x1="1.488" y1="-2.261" x2="3.469" y2="-0.254" width="0.254" layer="51"/>
+<wire x1="-4.989" y1="-5.461" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
+<wire x1="4.993" y1="3.734" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
+<wire x1="4.993" y1="3.734" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
+<wire x1="-4.989" y1="-5.461" x2="-4.989" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-4.989" y1="-3.073" x2="-3.389" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-3.389" y1="-3.073" x2="-1.611" y2="-3.073" width="0.1524" layer="51"/>
+<wire x1="-1.611" y1="-3.073" x2="1.615" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="3.393" y1="-3.073" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-4.989" y1="-3.073" x2="-4.989" y2="3.531" width="0.1524" layer="21"/>
+<wire x1="4.993" y1="-3.073" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
+<wire x1="-4.989" y1="3.531" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
+<wire x1="-4.989" y1="3.531" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
+<wire x1="4.993" y1="3.531" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="1.615" y1="-3.073" x2="3.393" y2="-3.073" width="0.1524" layer="51"/>
+<circle x="-2.5" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
+<circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
+<pad name="1" x="-2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
+<pad name="2" x="2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
+<text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
+<text x="0.421" y="0.635" size="1.27" layer="21" ratio="10">2</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="W237-102" urn="urn:adsk.eagle:package:10688/1" type="box" library_version="2">
+<description>WAGO SCREW CLAMP</description>
+<packageinstances>
+<packageinstance name="W237-102"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="KL" urn="urn:adsk.eagle:symbol:10675/1" library_version="2">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="KL+V" urn="urn:adsk.eagle:symbol:10673/1" library_version="2">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="W237-102" urn="urn:adsk.eagle:component:10702/2" prefix="X" uservalue="yes" library_version="2">
+<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
+<gate name="-2" symbol="KL+V" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="W237-102">
+<connects>
+<connect gate="-1" pin="KL" pad="1"/>
+<connect gate="-2" pin="KL" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10688/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="237-102" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="70K9898" constant="no"/>
+<attribute name="POPULARITY" value="32" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Eagle_WCAP-ASLI_rev20a">
+<description>&lt;BR&gt;Wurth Elektronik - Capacitors - Aluminum Electrolytic Capacitors - WCAP-ASLI&lt;br&gt;&lt;Hr&gt;
+
+&lt;BR&gt;
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;
+&lt;HR&gt;
+&lt;br&gt;Eagle Version 9, Library Revision 2020a, 2020-03-02&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="WCAP-ASLI_4X5.5(DXL)" urn="urn:adsk.eagle:footprint:18353976/1">
+<description>&lt;B&gt;WCAP-ASLI&lt;/B&gt;&lt;BR&gt; Aluminium Electrolytic Capacitors,4X5.5X1(DiameterXLengthXPitch)</description>
+<smd name="2" x="-1.8" y="0" dx="2.6" dy="1.6" layer="1"/>
+<smd name="1" x="1.8" y="0" dx="2.6" dy="1.6" layer="1"/>
+<wire x1="-2.25" y1="2.25" x2="1.4" y2="2.25" width="0.2" layer="21"/>
+<wire x1="-2.25" y1="-2.25" x2="-2.25" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-2.25" y1="-2.25" x2="1.4" y2="-2.25" width="0.2" layer="21"/>
+<wire x1="-2.25" y1="2.25" x2="-2.25" y2="1.1" width="0.2" layer="21"/>
+<wire x1="1.4" y1="2.25" x2="2.25" y2="1.4" width="0.2" layer="21"/>
+<wire x1="1.4" y1="-2.25" x2="2.25" y2="-1.4" width="0.2" layer="21"/>
+<wire x1="2.25" y1="1.4" x2="2.25" y2="1.1" width="0.2" layer="21"/>
+<wire x1="2.25" y1="-1.4" x2="2.25" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-2.15" y1="2.15" x2="-2.15" y2="-2.15" width="0.1" layer="51"/>
+<wire x1="-2.15" y1="-2.15" x2="1.35" y2="-2.15" width="0.1" layer="51"/>
+<wire x1="1.35" y1="-2.15" x2="2.15" y2="-1.35" width="0.1" layer="51"/>
+<wire x1="2.15" y1="-1.35" x2="2.15" y2="1.35" width="0.1" layer="51"/>
+<wire x1="2.15" y1="1.35" x2="1.35" y2="2.15" width="0.1" layer="51"/>
+<wire x1="1.35" y1="2.15" x2="-2.15" y2="2.15" width="0.1" layer="51"/>
+<text x="-0.3" y="3.1" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-0.5" y="-3.9" size="0.8128" layer="27" align="bottom-center">&gt;VALUE</text>
+<text x="2.9" y="-2.1" size="1.016" layer="21" align="bottom-center">+</text>
+<text x="2.9" y="-2.1" size="1.016" layer="48" align="bottom-center">+</text>
+<circle x="0" y="0" radius="2" width="0.1" layer="51"/>
+<polygon width="0.1" layer="39">
+<vertex x="-2.45" y="2.45"/>
+<vertex x="-2.45" y="1"/>
+<vertex x="-3.3" y="1"/>
+<vertex x="-3.3" y="-1"/>
+<vertex x="-2.45" y="-1"/>
+<vertex x="-2.45" y="-2.45"/>
+<vertex x="1.45" y="-2.45"/>
+<vertex x="2.45" y="-1.45"/>
+<vertex x="2.45" y="-1"/>
+<vertex x="3.3" y="-1"/>
+<vertex x="3.3" y="1"/>
+<vertex x="2.45" y="1"/>
+<vertex x="2.45" y="1.5"/>
+<vertex x="1.5" y="2.45"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="WCAP-ASLI_4X5.5(DXL)" urn="urn:adsk.eagle:package:18353987/3" type="model">
+<description>&lt;B&gt;WCAP-ASLI&lt;/B&gt;&lt;BR&gt; Aluminium Electrolytic Capacitors,4X5.5X1(DiameterXLengthXPitch)</description>
+<packageinstances>
+<packageinstance name="WCAP-ASLI_4X5.5(DXL)"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="C_POLAR">
+<description>C_POLARIZED</description>
+<pin name="+" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="-" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<text x="1.175" y="3.38" size="1.4224" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0.915" y="-5.075" size="1.4224" layer="96" align="bottom-center">&gt;VALUE</text>
+<text x="2.54" y="-1.905" size="1.4224" layer="94">+</text>
+<wire x1="1.905" y1="1.905" x2="1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.64261875" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.927859375" y1="0" x2="2.57048125" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WCAP-ASLI_4X5.5" prefix="C">
+<description>&lt;b&gt;WCAP-ASLI Aluminium Electrolytic Capacitors &lt;/B&gt;&lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;Low Impedance +105 °C &lt;/B&gt;&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Characteristics&lt;/B&gt;&lt;BR&gt;
+&lt;BR&gt;Low impedance product series 
+&lt;BR&gt;Mounting style: V-Chip SMT 
+&lt;BR&gt;Capacitance range: 0.1 µF ‒ 6800 µF 
+&lt;BR&gt;Capacitance tolerance: ±20 % 
+&lt;BR&gt;Voltage range (UR): 6.3 ‒ 100 V(DC) 
+&lt;BR&gt;Operating temperature: -55 °C up to +105 °C 
+&lt;BR&gt;Endurance: 2000 h @ +105 °C 
+&lt;BR&gt;Dimensions (DxL) in mm: 4.0 x 5.5 up to 16.0 x 17.0 
+&lt;BR&gt;Recommended soldering: Reflow soldering 
+&lt;BR&gt;
+&lt;BR&gt;
+&lt;B&gt;Applications&lt;/B&gt;&lt;BR&gt;
+&lt;BR&gt;Low impedance, especially for filtering applications 
+&lt;BR&gt;Input and output capacitor for switched-mode power supply 
+&lt;BR&gt;Filtering 
+&lt;BR&gt;Smoothing 
+&lt;BR&gt;e.g. DC/DC converter, AC/DC converter, satellite receiver, control panel 
+&lt;BR&gt;
+&lt;BR&gt;&lt;BR&gt;
+&lt;BR&gt;
+&lt;br&gt;&lt;a href="https://www.we-online.com/catalog/media/o14723v209%20Family_WCAP-ASLI.jpg" title="Enlarge picture"&gt;
+&lt;img src="https://www.we-online.com/catalog/media/o14723v209%20Family_WCAP-ASLI.jpg"  width="320"&gt;&lt;/a&gt;&lt;p&gt;
+
+&lt;/b&gt;&lt;br&gt;            
+Details see: &lt;a href="https://www.we-online.com/catalog/en/WCAP-ASLI/"&gt;https://www.we-online.com/catalog/en/WCAP-ASLI/&lt;/a&gt;&lt;p&gt;
+&lt;br&gt;Updated by yingchun,Shan;2020-03-02
+&lt;br&gt;2020(C) Würth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="C_POLAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WCAP-ASLI_4X5.5(DXL)">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18353987/3"/>
+</package3dinstances>
+<technologies>
+<technology name="_865080140001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080140001.pdf" constant="no"/>
+<attribute name="DF" value="24%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="75mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080140001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055220M6R3DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="22  µF " constant="no"/>
+<attribute name="VR" value="6.3V(DC)" constant="no"/>
+</technology>
+<technology name="_865080140002">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080140002.pdf" constant="no"/>
+<attribute name="DF" value="24%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="79mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080140002 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055270M6R3DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="27  µF " constant="no"/>
+<attribute name="VR" value="6.3V(DC)" constant="no"/>
+</technology>
+<technology name="_865080140003">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080140003.pdf" constant="no"/>
+<attribute name="DF" value="24%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="82mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080140003 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055330M6R3DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="33  µF " constant="no"/>
+<attribute name="VR" value="6.3V(DC)" constant="no"/>
+</technology>
+<technology name="_865080140004">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080140004.pdf" constant="no"/>
+<attribute name="DF" value="24%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="86mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080140004 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055470M6R3DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="47  µF " constant="no"/>
+<attribute name="VR" value="6.3V(DC)" constant="no"/>
+</technology>
+<technology name="_865080240001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080240001.pdf" constant="no"/>
+<attribute name="DF" value="19%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="80mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080240001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055220M010DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="22  µF " constant="no"/>
+<attribute name="VR" value="10V(DC)" constant="no"/>
+</technology>
+<technology name="_865080240003">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080240003.pdf" constant="no"/>
+<attribute name="DF" value="19%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3.3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="90mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080240003 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055330M010DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="33  µF " constant="no"/>
+<attribute name="VR" value="10V(DC)" constant="no"/>
+</technology>
+<technology name="_865080340001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080340001.pdf" constant="no"/>
+<attribute name="DF" value="16%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="80mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080340001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055100M016DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="10  µF " constant="no"/>
+<attribute name="VR" value="16V(DC)" constant="no"/>
+</technology>
+<technology name="_865080340002">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080340002.pdf" constant="no"/>
+<attribute name="DF" value="16%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="85mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080340002 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055150M016DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="15  µF " constant="no"/>
+<attribute name="VR" value="16V(DC)" constant="no"/>
+</technology>
+<technology name="_865080340003">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080340003.pdf" constant="no"/>
+<attribute name="DF" value="16%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3.52uA" constant="no"/>
+<attribute name="I-RIPPLE" value="90mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080340003 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055220M016DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="22  µF " constant="no"/>
+<attribute name="VR" value="16V(DC)" constant="no"/>
+</technology>
+<technology name="_865080440001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080440001.pdf" constant="no"/>
+<attribute name="DF" value="14%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="70mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080440001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0556R8M025DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="6.8  µF " constant="no"/>
+<attribute name="VR" value="25V(DC)" constant="no"/>
+</technology>
+<technology name="_865080440002">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080440002.pdf" constant="no"/>
+<attribute name="DF" value="14%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="85mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080440002 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055100M025DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="10  µF " constant="no"/>
+<attribute name="VR" value="25V(DC)" constant="no"/>
+</technology>
+<technology name="_865080540001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080540001.pdf" constant="no"/>
+<attribute name="DF" value="14%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="80mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080540001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0553R3M035DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="3.3  µF " constant="no"/>
+<attribute name="VR" value="35V(DC)" constant="no"/>
+</technology>
+<technology name="_865080540002">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080540002.pdf" constant="no"/>
+<attribute name="DF" value="14%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="85mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080540002 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0554R7M035DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="4.7  µF " constant="no"/>
+<attribute name="VR" value="35V(DC)" constant="no"/>
+</technology>
+<technology name="_865080540003">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080540003.pdf" constant="no"/>
+<attribute name="DF" value="14%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="88mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080540003 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0556R8M035DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="6.8  µF " constant="no"/>
+<attribute name="VR" value="35V(DC)" constant="no"/>
+</technology>
+<technology name="_865080540004">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080540004.pdf" constant="no"/>
+<attribute name="DF" value="14%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3.5uA" constant="no"/>
+<attribute name="I-RIPPLE" value="90mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080540004 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055100M035DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="10  µF " constant="no"/>
+<attribute name="VR" value="35V(DC)" constant="no"/>
+</technology>
+<technology name="_865080640001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080640001.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="55mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080640001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055010M050DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="1  µF " constant="no"/>
+<attribute name="VR" value="50V(DC)" constant="no"/>
+</technology>
+<technology name="_865080640002">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080640002.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="55mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080640002 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0552R2M050DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="2.2  µF " constant="no"/>
+<attribute name="VR" value="50V(DC)" constant="no"/>
+</technology>
+<technology name="_865080640003">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080640003.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="55mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080640003 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0553R3M050DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="3.3  µF " constant="no"/>
+<attribute name="VR" value="50V(DC)" constant="no"/>
+</technology>
+<technology name="_865080640004">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080640004.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="55mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080640004 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0554R7M050DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="4.7  µF " constant="no"/>
+<attribute name="VR" value="50V(DC)" constant="no"/>
+</technology>
+<technology name="_865080740002">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080740002.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3000uA" constant="no"/>
+<attribute name="I-RIPPLE" value="1mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080740002 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055R10M063DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="0.1  µF " constant="no"/>
+<attribute name="VR" value="63V(DC)" constant="no"/>
+</technology>
+<technology name="_865080740003">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080740003.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="2mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080740003 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055R22M063DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="0.22  µF " constant="no"/>
+<attribute name="VR" value="63V(DC)" constant="no"/>
+</technology>
+<technology name="_865080740004">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080740004.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="3mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080740004 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055R33M063DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="0.33  µF " constant="no"/>
+<attribute name="VR" value="63V(DC)" constant="no"/>
+</technology>
+<technology name="_865080740005">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080740005.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="4mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080740005 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055R47M063DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="0.47  µF " constant="no"/>
+<attribute name="VR" value="63V(DC)" constant="no"/>
+</technology>
+<technology name="_865080740006">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080740006.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="7mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080740006 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055010M063DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="1  µF " constant="no"/>
+<attribute name="VR" value="63V(DC)" constant="no"/>
+</technology>
+<technology name="_865080740007">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080740007.pdf" constant="no"/>
+<attribute name="DF" value="12%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="11mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080740007 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB0552R2M063DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="2.2  µF " constant="no"/>
+<attribute name="VR" value="63V(DC)" constant="no"/>
+</technology>
+<technology name="_865080840001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865080840001.pdf" constant="no"/>
+<attribute name="DF" value="10%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="7mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865080840001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055010M100DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="1  µF " constant="no"/>
+<attribute name="VR" value="100V(DC)" constant="no"/>
+</technology>
+<technology name="_865081740001">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/865081740001.pdf" constant="no"/>
+<attribute name="DF" value="10%" constant="no"/>
+<attribute name="DIAMETER" value="4mm" constant="no"/>
+<attribute name="I-LEAK" value="3uA" constant="no"/>
+<attribute name="I-RIPPLE" value="7mA" constant="no"/>
+<attribute name="L" value="5.5mm" constant="no"/>
+<attribute name="OPERATING-TEMPERATURE" value="-55 °C up to +105 °C" constant="no"/>
+<attribute name="PART-NUMBER" value=" 865081740001 " constant="no"/>
+<attribute name="TECHNICAL-REFERENCE" value="ASEB055010M080DVCTAB000" constant="no"/>
+<attribute name="VALUE" value="1  µF " constant="no"/>
+<attribute name="VR" value="80V(DC)" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9752,7 +10282,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$3" library="inductor-vishay" library_urn="urn:adsk.eagle:library:17602353" deviceset="IHLP-1212" device="" package3d_urn="urn:adsk.eagle:package:17602355/1"/>
 <part name="U$4" library="inductor-vishay" library_urn="urn:adsk.eagle:library:17602353" deviceset="IHLP-1212" device="" package3d_urn="urn:adsk.eagle:package:17602355/1"/>
-<part name="X2" library="con-berg" library_urn="urn:adsk.eagle:library:130" deviceset="PN87520" device="" package3d_urn="urn:adsk.eagle:package:6146/1"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A5L-LOC" device=""/>
 <part name="U$5" library="st-microelectronics" library_urn="urn:adsk.eagle:library:18661622" deviceset="STM32-F042X4/6-48" device="" package3d_urn="urn:adsk.eagle:package:18661624/1"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
@@ -9774,10 +10303,19 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA5_L" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-2" device="" package3d_urn="urn:adsk.eagle:package:8078800/1"/>
 <part name="U$6" library="ai-thinker" library_urn="urn:adsk.eagle:library:18697339" deviceset="RA-02" device="" package3d_urn="urn:adsk.eagle:package:18697343/1"/>
 <part name="U$7" library="ai-thinker" library_urn="urn:adsk.eagle:library:18697339" deviceset="RA-02" device="" package3d_urn="urn:adsk.eagle:package:18697343/1"/>
-<part name="U$8" library="inductor-vishay" library_urn="urn:adsk.eagle:library:17602353" deviceset="IHLP-1212" device="" package3d_urn="urn:adsk.eagle:package:17602355/1"/>
+<part name="X1" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="X3" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C16" library="Eagle_WCAP-ASLI_rev20a" deviceset="WCAP-ASLI_4X5.5" device="" package3d_urn="urn:adsk.eagle:package:18353987/3" technology="_865080340003" value="22  µF "/>
+<part name="C17" library="Eagle_WCAP-ASLI_rev20a" deviceset="WCAP-ASLI_4X5.5" device="" package3d_urn="urn:adsk.eagle:package:18353987/3" technology="_865080340003" value="22  µF "/>
+<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9871,27 +10409,25 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <instance part="U$4" gate="G$1" x="160.02" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="163.83" y="112.8014" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X2" gate="G$1" x="55.88" y="60.96" smashed="yes">
-<attribute name="NAME" x="55.88" y="69.85" size="1.778" layer="95"/>
-<attribute name="VALUE" x="55.88" y="53.34" size="1.778" layer="96"/>
+<instance part="P+6" gate="1" x="45.72" y="71.12" smashed="yes">
+<attribute name="VALUE" x="43.18" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+6" gate="1" x="48.26" y="71.12" smashed="yes">
-<attribute name="VALUE" x="45.72" y="66.04" size="1.778" layer="96" rot="R90"/>
+<instance part="GND15" gate="1" x="45.72" y="55.88" smashed="yes">
+<attribute name="VALUE" x="43.18" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="GND15" gate="1" x="48.26" y="53.34" smashed="yes">
-<attribute name="VALUE" x="45.72" y="50.8" size="1.778" layer="96"/>
+<instance part="X1" gate="-1" x="10.16" y="66.04" smashed="yes">
+<attribute name="NAME" x="10.16" y="66.929" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-1" x="12.7" y="60.96" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.16" y="61.722" size="1.524" layer="95" rot="R180"/>
-<attribute name="VALUE" x="13.462" y="59.563" size="1.778" layer="96" rot="R180"/>
+<instance part="X1" gate="-2" x="10.16" y="60.96" smashed="yes">
+<attribute name="VALUE" x="7.62" y="57.277" size="1.778" layer="96"/>
+<attribute name="NAME" x="10.16" y="61.849" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="12.7" y="66.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.16" y="66.802" size="1.524" layer="95" rot="R180"/>
-<attribute name="VALUE" x="13.462" y="64.643" size="1.778" layer="96" rot="R180"/>
+<instance part="X3" gate="-1" x="33.02" y="66.04" smashed="yes">
+<attribute name="NAME" x="33.02" y="66.929" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="U$8" gate="G$1" x="-5.08" y="137.16" smashed="yes">
-<attribute name="NAME" x="-6.5786" y="133.35" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-1.778" y="133.35" size="1.778" layer="96" rot="R90"/>
+<instance part="X3" gate="-2" x="33.02" y="60.96" smashed="yes">
+<attribute name="VALUE" x="30.48" y="57.277" size="1.778" layer="96"/>
+<attribute name="NAME" x="33.02" y="61.849" size="1.778" layer="95" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -9939,8 +10475,8 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <segment>
 <wire x1="20.32" y1="60.96" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="X1" gate="-1" pin="S"/>
 <wire x1="20.32" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="KL"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="PGND"/>
@@ -9981,10 +10517,10 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="167.64" y1="93.98" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="4"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="53.34" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="58.42" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="KL"/>
+<wire x1="45.72" y1="58.42" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10021,18 +10557,18 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="U$3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="53.34" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="66.04" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="66.04" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-1" pin="KL"/>
+<wire x1="38.1" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="20.32" y1="66.04" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="S"/>
 <wire x1="20.32" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="KL"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="EN"/>
@@ -10187,6 +10723,10 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <instance part="GND13" gate="1" x="20.32" y="17.78" smashed="yes">
 <attribute name="VALUE" x="17.78" y="15.24" size="1.778" layer="96"/>
 </instance>
+<instance part="JP2" gate="G$1" x="12.7" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.05" y="40.005" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="19.05" y="50.8" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10305,42 +10845,42 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <label x="20.32" y="25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SPI1_SCK" class="0">
+<net name="LORA1_SCK" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="PA5"/>
 <wire x1="48.26" y1="99.06" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
 <label x="45.72" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SPI1_MISO" class="0">
+<net name="LORA1_MISO" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="PA6"/>
 <wire x1="48.26" y1="96.52" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
 <label x="45.72" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SPI1_MOSI" class="0">
+<net name="LORA1_MOSI" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="PA7"/>
 <wire x1="48.26" y1="93.98" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
 <label x="45.72" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SPI2_SCK" class="0">
+<net name="LORA2_SCK" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="PB10"/>
 <wire x1="93.98" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 <label x="96.52" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SPI2_MOSI" class="0">
+<net name="LORA2_MOSI" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="PB15"/>
 <wire x1="93.98" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 <label x="96.52" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SPI2_MISO" class="0">
+<net name="LORA2_MISO" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="PB14"/>
 <wire x1="93.98" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
@@ -10361,6 +10901,72 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <label x="45.72" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="USART1_RX" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PA10"/>
+<wire x1="48.26" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
+<label x="45.72" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<label x="22.86" y="43.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="USART1_TX" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PA9"/>
+<wire x1="48.26" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<label x="45.72" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
+<label x="22.86" y="45.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="LORA2_RST" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PB11"/>
+<wire x1="93.98" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
+<label x="96.52" y="91.44" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_D0" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PB12"/>
+<wire x1="93.98" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<label x="96.52" y="88.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_D0" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PA3"/>
+<wire x1="48.26" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
+<label x="45.72" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_RST" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PA2"/>
+<wire x1="48.26" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
+<label x="45.72" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_NSS" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PB13"/>
+<wire x1="93.98" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<label x="96.52" y="86.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_NSS" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PA4"/>
+<wire x1="48.26" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
+<label x="45.72" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -10372,12 +10978,180 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="LAST_DATE_TIME" x="140.97" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="154.305" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="U$6" gate="G$1" x="35.56" y="101.6" smashed="yes"/>
-<instance part="U$7" gate="G$1" x="78.74" y="101.6" smashed="yes"/>
+<instance part="U$6" gate="G$1" x="48.26" y="101.6" smashed="yes"/>
+<instance part="U$7" gate="G$1" x="137.16" y="101.6" smashed="yes"/>
+<instance part="C14" gate="G$1" x="20.32" y="86.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.796" y="85.979" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="18.796" y="91.059" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C15" gate="G$1" x="109.22" y="86.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="107.696" y="85.979" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="107.696" y="91.059" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND14" gate="1" x="33.02" y="78.74" smashed="yes">
+<attribute name="VALUE" x="30.48" y="76.2" size="1.778" layer="96"/>
+</instance>
+<instance part="C16" gate="G$1" x="27.94" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.56" y="87.535" size="1.4224" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="33.015" y="87.275" size="1.4224" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="C17" gate="G$1" x="116.84" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="113.46" y="87.535" size="1.4224" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="121.915" y="87.275" size="1.4224" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="+3V6" gate="G$1" x="10.16" y="93.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="15.24" y="91.44" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND16" gate="1" x="121.92" y="78.74" smashed="yes">
+<attribute name="VALUE" x="119.38" y="76.2" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V7" gate="G$1" x="99.06" y="93.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="104.14" y="91.44" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="LORA1_RST" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="RESET"/>
+<wire x1="33.02" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+<label x="30.48" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_MISO" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="MISO"/>
+<wire x1="33.02" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<label x="30.48" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_MOSI" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="MOSI"/>
+<wire x1="33.02" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
+<label x="30.48" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_SCK" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="SCK"/>
+<wire x1="33.02" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="30.48" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_D0" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="DIO0"/>
+<wire x1="63.5" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+<label x="66.04" y="111.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_RST" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="RESET"/>
+<wire x1="121.92" y1="111.76" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
+<label x="119.38" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_MISO" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="MISO"/>
+<wire x1="121.92" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
+<label x="119.38" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_MOSI" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="MOSI"/>
+<wire x1="121.92" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+<label x="119.38" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_SCK" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="SCK"/>
+<wire x1="121.92" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
+<label x="119.38" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_D0" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="DIO0"/>
+<wire x1="152.4" y1="111.76" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
+<label x="154.94" y="111.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LORA1_NSS" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="NSS"/>
+<wire x1="33.02" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
+<label x="30.48" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LORA2_NSS" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="NSS"/>
+<wire x1="121.92" y1="109.22" x2="119.38" y2="109.22" width="0.1524" layer="91"/>
+<label x="119.38" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="VDD"/>
+<wire x1="33.02" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="93.98" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="93.98" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
+<junction x="20.32" y="93.98"/>
+<pinref part="C16" gate="G$1" pin="+"/>
+<wire x1="27.94" y1="91.44" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<junction x="27.94" y="93.98"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="VDD"/>
+<pinref part="C17" gate="G$1" pin="+"/>
+<wire x1="121.92" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="93.98" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="93.98" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<junction x="116.84" y="93.98"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="109.22" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+<junction x="109.22" y="93.98"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="VSS"/>
+<wire x1="33.02" y1="91.44" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="83.82" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<junction x="33.02" y="81.28"/>
+<pinref part="C16" gate="G$1" pin="-"/>
+<wire x1="27.94" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="83.82" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
+<junction x="27.94" y="81.28"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="VSS"/>
+<wire x1="121.92" y1="91.44" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="-"/>
+<wire x1="121.92" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="81.28" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="81.28" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
+<junction x="116.84" y="81.28"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<junction x="121.92" y="81.28"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
