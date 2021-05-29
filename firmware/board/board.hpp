@@ -30,6 +30,7 @@ struct SystemClock
 	static constexpr uint32_t Usart2 = Apb;
 
 	// Spi
+	static constexpr int Spi1 = Frequency;
 	static constexpr int Spi2 = Frequency;
 
 	static bool inline
@@ -92,10 +93,13 @@ initialize()
 	SystemClock::enable();
 	SysTickTimer::initialize<SystemClock>();
 
-	lora1::spi::connect<lora1::Sck, lora1::Miso, lora1::Mosi>();
+	lora1::Sck::setOutput();
+	lora1::Sck::set();
+
+	lora1::spi::connect<lora1::Sck::Sck, lora1::Miso::Miso, lora1::Mosi::Mosi>();
 	lora1::spi::initialize<SystemClock, 1500_kHz>();
 
-	lora2::spi::connect<lora2::Sck, lora2::Miso, lora2::Mosi>();
+	lora2::spi::connect<lora2::Sck::Sck, lora2::Miso::Miso, lora2::Mosi::Mosi>();
 	lora2::spi::initialize<SystemClock, 1500_kHz>();
 
 	rpi::Uart::connect<rpi::Tx::Tx, rpi::Rx::Rx>();
