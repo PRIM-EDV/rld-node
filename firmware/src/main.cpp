@@ -1,13 +1,11 @@
-#include <modm/platform.hpp>
+#include "../board/board.hpp"
 
-using namespace modm::platform;
-using namespace std::chrono_literals;
+using namespace Board;
 
 int main()
 {
-    GpioA0::setOutput();
     while (true)
     {
-        GpioA0::toggle();
+
     }
 }

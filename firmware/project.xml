@@ -3,15 +3,17 @@
     <repository><path>../ext/modm/repo.lb</path></repository>
   </repositories>
   <options>
-    <option name="modm:target">stm32f042c6u6</option>
+    <option name="modm:build:build.path">build</option>
     <option name="modm:build:openocd.cfg">../conf/openocd.cfg</option>
+    <option name="modm:target">stm32f042c6u6</option>
   </options>
   <modules>
     <module>modm:platform:clock</module>
     <module>modm:platform:core</module>
     <module>modm:platform:gpio</module>
-    <module>modm:architecture:delay</module>
+    <module>modm:platform:uart:1</module>
+    <module>modm:platform:spi:1</module>
+    <module>modm:platform:spi:2</module>
     <module>modm:build:scons</module>
-    <module>modm:docs</module>
   </modules>
 </library>
