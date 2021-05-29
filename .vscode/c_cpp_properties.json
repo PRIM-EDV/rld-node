@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/**",
+                "${workspaceFolder}/firmware/modm/src",
+                "${workspaceFolder}/firmware/modm/ext/cmsis/core",
+                "${workspaceFolder}/firmware/modm/ext/cmsis/device",
+                "${workspaceFolder}"
+            ],
+            "intelliSenseMode": "clang-arm64"
+        }
+    ],
+    "version": 4
+}
