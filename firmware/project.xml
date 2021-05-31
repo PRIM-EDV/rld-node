@@ -8,6 +8,8 @@
     <option name="modm:target">stm32f042c6u6</option>
   </options>
   <modules>
+    <module>modm:architecture:register</module>
+    <module>modm:architecture:spi.device</module>
     <module>modm:platform:clock</module>
     <module>modm:platform:core</module>
     <module>modm:platform:gpio</module>
