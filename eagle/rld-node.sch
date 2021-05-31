@@ -10812,6 +10812,7 @@ DIN female/male, etc.&lt;p&gt;
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="2.8" package3d_urn="urn:adsk.eagle:package:14281/1"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -11246,6 +11247,10 @@ DIN female/male, etc.&lt;p&gt;
 <attribute name="NAME" x="19.05" y="40.005" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="19.05" y="50.8" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="C15" gate="G$1" x="45.72" y="116.84" smashed="yes" rot="R270">
+<attribute name="NAME" x="46.101" y="115.316" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="41.021" y="115.316" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11294,6 +11299,16 @@ DIN female/male, etc.&lt;p&gt;
 <wire x1="15.24" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="22.86" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="BOOT0/PF11"/>
+<wire x1="48.26" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<label x="38.1" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
+<label x="38.1" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -11338,6 +11353,11 @@ DIN female/male, etc.&lt;p&gt;
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="15.24" y1="30.48" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="30.48" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDDIO2"/>
+<wire x1="48.26" y1="68.58" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<label x="45.72" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWCLK" class="0">
@@ -11486,6 +11506,12 @@ DIN female/male, etc.&lt;p&gt;
 <label x="45.72" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="NRST"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -11623,14 +11649,8 @@ DIN female/male, etc.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="VDD"/>
-<wire x1="121.92" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="93.98" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="93.98" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
-<junction x="116.84" y="93.98"/>
+<wire x1="121.92" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
-<wire x1="109.22" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<junction x="109.22" y="93.98"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11650,13 +11670,7 @@ DIN female/male, etc.&lt;p&gt;
 <segment>
 <pinref part="U$7" gate="G$1" pin="VSS"/>
 <wire x1="121.92" y1="91.44" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="81.28" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="81.28" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
-<junction x="116.84" y="81.28"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<junction x="121.92" y="81.28"/>
 </segment>
 </net>
 </nets>
