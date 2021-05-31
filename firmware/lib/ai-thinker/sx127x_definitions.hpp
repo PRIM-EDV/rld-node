@@ -12,7 +12,14 @@ namespace modm
 struct sx127x
 {
 public:
-
+    enum class
+    RegAccess : uint8_t
+    {
+        /// Defines read (0) or write (1) access
+        wnr = Bit7
+    };
+    MODM_FLAGS8(RegAccess)
+    
     enum class 
     Address : uint8_t
     {
@@ -48,15 +55,7 @@ public:
         PayloadLength = 0x22,
         DioMapping1 = 0x40
     };
-
-    // enum class
-    // RegAccess : uint8_t
-    // {
-    //     /// Defines read (0) or write (1) access
-    //     wnr = Bit7
-    // };
-    // XPCC_FLAGS8(RegAccess)
-    // typedef xpcc::Configuration<RegAccess_t, Address, 0x7F> Address_t;
+    typedef Configuration<RegAccess_t, Address, 0x7F> Address_t;
 
     // -- Common Registers -----------------------------------------------------
 
@@ -108,7 +107,7 @@ public:
     {};
     MODM_FLAGS8(RegPaRamp)
 
-    typedef Value<RegPaRamp_t, 4, Bit0> PaRamp_t;
+    typedef Value<RegPaRamp_t, Bit3 | Bit2 | Bit1 | Bit0> PaRamp_t;
 
     // -- LNA
     enum class
@@ -116,9 +115,9 @@ public:
     {};
     MODM_FLAGS8(RegLna)
 
-    typedef Value<RegLna_t, 3, 0x05> LnaGain_t;
-    typedef Value<RegLna_t, 2, 0x03> LnaBoostLf_t;
-    typedef Value<RegLna_t, 2, 0x00> LnaBoostHf_t;
+    typedef Value<RegLna_t, Bit7 | Bit6 | Bit5> LnaGain_t;
+    typedef Value<RegLna_t, Bit4 | Bit3> LnaBoostLf_t;
+    typedef Value<RegLna_t, Bit1 | Bit0> LnaBoostHf_t;
 
     // // -- Lora Page Registers --------------------------------------------------
 
@@ -177,73 +176,58 @@ public:
     };
     typedef Configuration<RegModemConfig1_t, SignalBandwidth, Bit7 | Bit6 | Bit5 | Bit4> SignalBandwidth_t;
 
-    // enum class
-    // ErrorCodingRate : uint8_t
-    // {
-    //     Cr4_5 = Bit0,
-    //     Cr4_6 = Bit1,
-    //     Cr4_7 = Bit1 | Bit0,
-    //     Cr4_8 = Bit2
-    // };
-    // typedef xpcc::Configuration<RegModemConfig1_t, ErrorCodingRate, 0b111, 0x01> ErrorCodingRate_t;
+    enum class
+    ErrorCodingRate : uint8_t
+    {
+        Cr4_5 = Bit0,
+        Cr4_6 = Bit1,
+        Cr4_7 = Bit1 | Bit0,
+        Cr4_8 = Bit2
+    };
+    typedef Configuration<RegModemConfig1_t, ErrorCodingRate, Bit3 | Bit2 | Bit1> ErrorCodingRate_t;
 
-    // // -- Modem Config 2
-    // enum class
-    // RegModemConfig2 : uint8_t
-    // {
-    //     /// Set either single package mode (0) or continuous mode (1)
-    //     TxContinuousMode = Bit3,
+    // -- Modem Config 2
+    enum class
+    RegModemConfig2 : uint8_t
+    {
+        /// Set either single package mode (0) or continuous mode (1)
+        TxContinuousMode = Bit3,
 
-    //     /// Enable (1) or disable (0) CRC check on payload
-    //     RxPayloadCrcOn = Bit2
-    // };
-    // XPCC_FLAGS8(RegModemConfig2)
+        /// Enable (1) or disable (0) CRC check on payload
+        RxPayloadCrcOn = Bit2
+    };
+    MODM_FLAGS8(RegModemConfig2)
 
-    // enum class
-    // SpreadingFactor : uint8_t
-    // {
-    //     SF6 = 0x06,
-    //     SF7 = 0x07,
-    //     SF8 = 0x08,
-    //     SF9 = 0x09,
-    //     SF10 = 0x0a,
-    //     SF11 = 0x0b,
-    //     SF12 = 0x0c
-    // };
-    // typedef xpcc::Configuration<RegModemConfig2_t, SpreadingFactor, 0b1111, 0x04> SpreadingFactor_t;
-    // typedef xpcc::Value<RegModemConfig2_t, 2, 0x00>  SymbTimeoutMsb_t;
+    enum class
+    SpreadingFactor : uint8_t
+    {
+        SF6 = 0x06,
+        SF7 = 0x07,
+        SF8 = 0x08,
+        SF9 = 0x09,
+        SF10 = 0x0a,
+        SF11 = 0x0b,
+        SF12 = 0x0c
+    };
+    typedef Configuration<RegModemConfig2_t, SpreadingFactor, Bit7 | Bit6 | Bit5 | Bit4> SpreadingFactor_t;
+    typedef Value<RegModemConfig2_t, Bit1 | Bit0>  SymbTimeoutMsb_t;
 
-    // // -- ModemConfig3
-    // enum class
-    // RegModemConfig3 : uint8_t
-    // {
-    //     LowDataRateOptimize = Bit3,
-    //     AgcAutoOn = Bit2
-    // };
-    // XPCC_FLAGS8(RegModemConfig3)
+    // -- ModemConfig3
+    enum class
+    RegModemConfig3 : uint8_t
+    {
+        LowDataRateOptimize = Bit3,
+        AgcAutoOn = Bit2
+    };
+    MODM_FLAGS8(RegModemConfig3)
 
-    // // -- Dio Mapping 1
-    // enum class
-    // RegDioMapping1 : uint8_t
-    // {};
-    // XPCC_FLAGS8(RegDioMapping1)
+    // -- Dio Mapping 1
+    enum class
+    RegDioMapping1 : uint8_t
+    {};
+    MODM_FLAGS8(RegDioMapping1)
 
-    // typedef xpcc::Value<RegDioMapping1_t, 2, 0x06> Dio0Mapping_t;
-
-
-    // // -- Register list --------------------------------------------------------
-    // union Shared {
-    //     uint8_t value;
-    //     RegOpMode_t regOpMode;    
-    //     RegPaConfig_t regPaConfig;
-    //     RegLna_t regLna;
-    //     RegIrqFlagsMask_t regIrqFlagsMask;
-    //     RegIrqFlags_t regIrqFlags; 
-    //     RegModemConfig1_t regModemConfig1;
-    //     RegModemConfig2_t regModemConfig2;
-    //     RegModemConfig3_t regModemConfig3;
-    //     RegDioMapping1_t regDioMapping1;
-    // };
+    typedef Value<RegDioMapping1_t, Bit7 | Bit6> Dio0Mapping_t;
 };
 
 }
