@@ -69,6 +69,9 @@ public:
     setCarrierFreq(uint8_t msb, uint8_t mid, uint8_t lsb);
 
     ResumableResult<void>
+    setCarrierFreq(frequency_t freq);
+
+    ResumableResult<void>
     setPaBoost();
 
     ResumableResult<void>
@@ -110,6 +113,8 @@ public:
 
 private:
     uint8_t value;
+    uint8_t buffer[4];
+    int32_t frequency;
     RegAccess_t regAccess;
 
     union Shadow {

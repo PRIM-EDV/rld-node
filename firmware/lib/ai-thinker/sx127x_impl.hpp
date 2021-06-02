@@ -16,7 +16,7 @@ namespace modm
 template <typename SpiMaster, typename Cs>
 SX127x<SpiMaster, Cs>::SX127x()
 {
-    
+
 }
 
 // ----------------------------------------------------------------------------
@@ -192,6 +192,32 @@ SX127x<SpiMaster, Cs>::setCarrierFreq(uint8_t msb, uint8_t mid, uint8_t lsb)
     RF_CALL(write(Address::FrMid, mid));
     RF_CALL(write(Address::FrLsb, lsb));
 
+    RF_END();
+};
+
+// ----------------------------------------------------------------------------
+
+template <typename SpiMaster, typename Cs>
+ResumableResult<void>
+SX127x<SpiMaster, Cs>::setCarrierFreq(frequency_t freq)
+{
+    RF_BEGIN();
+
+    // Read current configuration and set operation mode to 'sleep'
+    RF_CALL(read(Address::OpMode, &((shadow.regOpMode).value), 1));
+
+    Mode_t::set(shadow.regOpMode, Mode::Standby);
+
+    RF_CALL(write(Address::OpMode, shadow.regOpMode.value));
+
+    frequency = static_cast<uint32_t>(freq * (static_cast<float>(1<<19) / static_cast<float>(32_MHz)));
+    buffer[0] = static_cast<uint8_t>((frequency >> 16) & 0xFF);
+	buffer[1] = static_cast<uint8_t>((frequency >> 8) & 0xFF);
+	buffer[2] = static_cast<uint8_t>(frequency & 0xFF);
+
+    // write the three frequency bytes (MSB->LSB)
+    RF_CALL(write(Address::FrMsb, buffer, 3))
+    
     RF_END();
 };
 
