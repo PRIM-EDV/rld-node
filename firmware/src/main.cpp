@@ -1,5 +1,7 @@
 #include "../board/board.hpp"
-// #include "../lib/ai-thinker/sx127x.hpp"
+#include "nanopb/pb_decode.h"
+#include "nanopb/pb_encode.h"
+#include "nanopb/protocol/protocol.pb.h"
 
 using namespace Board;
 

@@ -1,6 +1,9 @@
 .vscode/
 
+__pycache__/
+
 firmware/modm
+firmware/nanopb
 firmware/build
 firmware/Sconstruct
 firmware/project.xml.log
