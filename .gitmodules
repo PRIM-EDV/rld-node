@@ -4,6 +4,3 @@
 [submodule "firmware/lib/ai-thinker"]
 	path = firmware/lib/ai-thinker
 	url = https://github.com/lmoesch/modm-ai-thinker
-[submodule "ext\\nanopb"]
-	path = ext\\nanopb
-	url = https://github.com/nanopb/nanopb

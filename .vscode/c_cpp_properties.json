@@ -7,9 +7,12 @@
                 "${workspaceFolder}/firmware/modm/src",
                 "${workspaceFolder}/firmware/modm/ext/cmsis/core",
                 "${workspaceFolder}/firmware/modm/ext/cmsis/device",
-                "${workspaceFolder}"
-            ],
-            "intelliSenseMode": "clang-arm64"
+                "${workspaceFolder}/firmware/lib/ai-thinker",
+                "${workspaceFolder}/firmware/board",
+                "${workspaceFolder}/firmware/src"
+            ],                
+            "intelliSenseMode": "clang-arm64",
+            "cppStandard": "c++20"
         }
     ],
     "version": 4

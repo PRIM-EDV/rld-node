@@ -1,0 +1,10 @@
+import lbuild
+
+def init(repo):
+    repo.name = "nanopb"
+
+def prepare(module, options):
+    return True
+
+def build(env):
+    pass
