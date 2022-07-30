@@ -1,13 +1,14 @@
 <library>
   <repositories>
     <repository><path>../ext/modm/repo.lb</path></repository>
-    <repository><path>../ext/nanopb/repo.lb</path></repository>
   </repositories>
   <options>
     <option name="modm:build:build.path">build</option>
     <option name="modm:build:openocd.cfg">conf/openocd.cfg</option>
+    <option name="modm:platform:uart:1:buffer.rx">256</option>
+    <option name="modm:platform:uart:1:buffer.tx">256</option>
     <option name="modm:target">stm32f042c6u6</option>
-    <option name="nanopb:protocol:protofile.path">protocol/protocol.proto</option>
+    <option name="modm:nanopb:protofile.path">protocol/protocol.proto</option>
   </options>
   <modules>
     <module>modm:architecture:register</module>
@@ -19,6 +20,6 @@
     <module>modm:platform:spi:1</module>
     <module>modm:platform:spi:2</module>
     <module>modm:build:scons</module>
-    <module>nanopb:protocol</module>
+    <module>modm:nanopb</module>
   </modules>
 </library>
