@@ -57,7 +57,7 @@ struct SystemClock
 
 namespace lora1 {
 	using Rst = GpioOutputA2;
-	using D0 = GpioOutputA3;
+	using D0 = GpioInputA3;
 
 	using Nss = GpioOutputA4;
 	using Sck = GpioOutputA5;
@@ -68,8 +68,8 @@ namespace lora1 {
 }
 
 namespace lora2 {
-	using Rst = GpioOutputA2;
-	using D0 = GpioOutputA3;
+	using Rst = GpioOutputB11;
+	using D0 = GpioInputB12;
 
 	using Nss = GpioOutputB13;
 	using Sck = GpioOutputB10;
@@ -93,11 +93,20 @@ initialize()
 	SystemClock::enable();
 	SysTickTimer::initialize<SystemClock>();
 
-	lora1::Sck::setOutput();
-	lora1::Sck::set();
+	lora1::Nss::setOutput();
+	lora1::Rst::setOutput();
+
+	lora1::Nss::set();
+	lora1::Rst::set();
 
 	lora1::Spi::connect<lora1::Sck::Sck, lora1::Miso::Miso, lora1::Mosi::Mosi>();
 	lora1::Spi::initialize<SystemClock, 1500_kHz>();
+
+	lora2::Nss::setOutput();
+	lora2::Rst::setOutput();
+
+	lora2::Nss::set();
+	lora2::Rst::set();
 
 	lora2::Spi::connect<lora2::Sck::Sck, lora2::Miso::Miso, lora2::Mosi::Mosi>();
 	lora2::Spi::initialize<SystemClock, 1500_kHz>();

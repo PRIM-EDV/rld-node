@@ -2,6 +2,6 @@
 	path = ext/modm
 	url = https://github.com/modm-io/modm
 
-[submodule "firmware/lib/ai-thinker"]
-	path = firmware/lib/ai-thinker
+[submodule "firmware/driver/ai-thinker"]
+	path = firmware/driver/ai-thinker
 	url = https://github.com/lmoesch/modm-ai-thinker
