@@ -4,7 +4,9 @@
  */
 // ----------------------------------------------------------------------------
 
-#include "driver/sx127x.hpp"
+#include "driver/ai-thinker/sx127x.hpp"
+
+using namespace modm;
 
 template <typename SpiMaster, typename Cs>
 class Ra02 : public SX127x<SpiMaster, Cs>
@@ -30,7 +32,7 @@ public:
 
 		RF_CALL(this->setPayloadLength(4));
 
-		// Set output power to 10 dBm (boost mode)
+		// // Set output power to 10 dBm (boost mode)
 		RF_CALL(this->setOutputPower(0x0a));
 
         RF_END();

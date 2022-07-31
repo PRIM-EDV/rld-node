@@ -7,6 +7,7 @@
 #ifndef RLD_NODE_BOARD_HPP
 #define RLD_NODE_BOARD_HPP
 
+#include <modm/io.hpp>
 #include <modm/platform.hpp>
 #include <modm/architecture/interface/clock.hpp>
 
@@ -87,6 +88,8 @@ namespace rpi
 	using Uart = Usart1;
 }
 
+
+
 inline void
 initialize()
 {
@@ -116,5 +119,7 @@ initialize()
 }
 
 }
+
+#include "board_impl.hpp"
 
 #endif

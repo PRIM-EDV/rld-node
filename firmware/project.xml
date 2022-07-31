@@ -24,6 +24,7 @@
     <module>modm:processing:resumable</module>
     <module>modm:processing</module>
     <module>modm:build:scons</module>
+    <module>modm:io</module>
     <module>modm:nanopb</module>
   </modules>
 </library>
