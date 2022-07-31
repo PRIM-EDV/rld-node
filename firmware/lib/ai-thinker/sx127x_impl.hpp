@@ -52,8 +52,9 @@ SX127x<SpiMaster, Cs>::write(Address addr, uint8_t data)
     RF_CALL(SpiMaster::transfer(regAccess.value));
     RF_CALL(SpiMaster::transfer(data));
 
-	if (this->releaseMaster())
-		Cs::set();
+	if (this->releaseMaster()) {
+        Cs::set();
+    }
 
     RF_END();
 }
@@ -216,8 +217,8 @@ SX127x<SpiMaster, Cs>::setCarrierFreq(frequency_t freq)
 	buffer[2] = static_cast<uint8_t>(frequency & 0xFF);
 
     // write the three frequency bytes (MSB->LSB)
-    RF_CALL(write(Address::FrMsb, buffer, 3))
-    
+    RF_CALL(write(Address::FrMsb, buffer, 3));
+
     RF_END();
 };
 
@@ -229,9 +230,9 @@ SX127x<SpiMaster, Cs>::setLnaGain(uint8_t gain)
 {
     RF_BEGIN();
 
-    // Read current configuration 
+    // Read current configuration
     RF_CALL(read(Address::Lna, &((shadow.regLna).value), 1));
- 
+
     LnaGain_t::set(shadow.regLna, gain);
 
     RF_CALL(write(Address::Lna, shadow.regLna.value));
@@ -245,9 +246,9 @@ SX127x<SpiMaster, Cs>::setLnaBoostHf()
 {
     RF_BEGIN();
 
-    // Read current configuration 
+    // Read current configuration
     RF_CALL(read(Address::Lna, &((shadow.regLna).value), 1));
-    
+
     LnaBoostHf_t::set(shadow.regLna, 0x03);
 
     RF_CALL(write(Address::Lna, shadow.regLna.value));
@@ -261,14 +262,14 @@ ResumableResult<void>
 SX127x<SpiMaster, Cs>::setAgcAutoOn()
 {
     RF_BEGIN();
-    // Read current configuration 
+    // Read current configuration
     RF_CALL(read(Address::ModemConfig3, &((shadow.regModemConfig3).value), 1));
-    
+
     shadow.regModemConfig3.set(RegModemConfig3::AgcAutoOn);
 
     RF_CALL(write(Address::ModemConfig3, shadow.regModemConfig3.value));
 
-    RF_END(); 
+    RF_END();
 }
 
 // ----------------------------------------------------------------------------
@@ -277,14 +278,14 @@ ResumableResult<void>
 SX127x<SpiMaster, Cs>::setLowDataRateOptimize()
 {
     RF_BEGIN();
-    // Read current configuration 
+    // Read current configuration
     RF_CALL(read(Address::ModemConfig3, &((shadow.regModemConfig3).value), 1));
-    
+
     shadow.regModemConfig3.set(RegModemConfig3::LowDataRateOptimize);
 
     RF_CALL(write(Address::ModemConfig3, shadow.regModemConfig3.value));
 
-    RF_END(); 
+    RF_END();
 }
 
 
@@ -296,7 +297,7 @@ SX127x<SpiMaster, Cs>::setPaBoost()
 {
     RF_BEGIN();
 
-    // Read current configuration 
+    // Read current configuration
     RF_CALL(read(Address::PaConfig, &((shadow.regPaConfig).value), 1));
 
     shadow.regPaConfig.set(RegPaConfig::PaSelect);
@@ -463,7 +464,7 @@ ResumableResult<bool>
 SX127x<SpiMaster, Cs>::getInterrupt(RegIrqFlags irq)
 {
     RF_BEGIN();
-    
+
     RF_CALL(read(Address::IrqFlags, &((shadow.regIrqFlags).value), 1));
 
     RF_END_RETURN(shadow.regIrqFlags & irq);
@@ -514,10 +515,10 @@ SX127x<SpiMaster, Cs>::sendPacket(uint8_t *data, uint8_t nbBytes)
     // Write payload to Fifo
     RF_CALL(write(Address::Fifo, data, nbBytes));
 
-    // Send the package   
+    // Send the package
     RF_CALL(setOperationMode(Mode::Transmit));
 
     RF_END();
 };
 
-} // end namespace modm 
+} // end namespace modm

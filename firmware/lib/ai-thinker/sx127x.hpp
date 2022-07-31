@@ -9,23 +9,23 @@ namespace modm
 {
 
 template <typename SpiMaster, typename Cs>
-class SX127x : public sx127x, public SpiDevice<SpiMaster>, NestedResumable<6>
+class SX127x : public sx127x, public SpiDevice<SpiMaster>, protected NestedResumable<2>
 {
 public:
 	SX127x();
 
-    /// 
+    ///
 	ResumableResult<void>
 	initialize();
 
     // -- Basic I/O ------------------------------------------------------------
 
     /**
-     *  Write access to specified SX127x register. 
-     *  
-     *  Writes exactly one byte of data to the register specified by it's 
+     *  Write access to specified SX127x register.
+     *
+     *  Writes exactly one byte of data to the register specified by it's
      *  address.
-     * 
+     *
      *  @param addr Address of the register to write to.
      *  @param data Databyte to write to the specified address.
      */
@@ -118,15 +118,17 @@ private:
     RegAccess_t regAccess;
 
     union Shadow {
-        RegOpMode_t regOpMode;    
+        RegOpMode_t regOpMode;
         RegPaConfig_t regPaConfig;
         RegLna_t regLna;
         RegIrqFlagsMask_t regIrqFlagsMask;
-        RegIrqFlags_t regIrqFlags; 
+        RegIrqFlags_t regIrqFlags;
         RegModemConfig1_t regModemConfig1;
         RegModemConfig2_t regModemConfig2;
         RegModemConfig3_t regModemConfig3;
         RegDioMapping1_t regDioMapping1;
+
+        Shadow() {this->regOpMode.value = 0x00;}
     } shadow;
 };
 }

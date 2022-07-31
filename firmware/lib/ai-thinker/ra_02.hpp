@@ -7,15 +7,17 @@ namespace modm
 {
 
 template <typename SpiMaster, typename Cs>
-class Ra02 : public SX127x<SpiMaster, Cs>, public sx127x, NestedResumable<6>
+class Ra02 : public SX127x<SpiMaster, Cs>
 {
 public:
 	Ra02();
 
 	ResumableResult<void>
-	initialize(frequency_t freq, SpreadingFactor sf, SignalBandwidth bw, ErrorCodingRate cr);
+	initialize(frequency_t freq, sx127x::SpreadingFactor sf, sx127x::SignalBandwidth bw, sx127x::ErrorCodingRate cr);
 };
 
 }
+
+#include "ra_02_impl.hpp"
 
 #endif

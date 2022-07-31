@@ -25,7 +25,7 @@ struct SystemClock
 	static constexpr uint32_t Ahb = Frequency;
 	static constexpr uint32_t Apb = Frequency;
 
-	// Usart 
+	// Usart
 	static constexpr uint32_t Usart1 = Apb;
 	static constexpr uint32_t Usart2 = Apb;
 
@@ -41,7 +41,7 @@ struct SystemClock
 			.pllMul = 12,
 			.pllPrediv = 2
 		};
-        Rcc::enablePll(Rcc::PllSource::InternalClock, pllFactors); 
+        Rcc::enablePll(Rcc::PllSource::InternalClock, pllFactors);
 		// set flash latency for 48MHz
 		Rcc::setFlashLatency<Frequency>();
 		// switch system clock to PLL output
@@ -64,7 +64,7 @@ namespace lora1 {
 	using Miso = GpioInputA6;
 	using Mosi = GpioOutputA7;
 
-	using spi = SpiMaster1;
+	using Spi = SpiMaster1;
 }
 
 namespace lora2 {
@@ -76,7 +76,7 @@ namespace lora2 {
 	using Miso = GpioInputB14;
 	using Mosi = GpioOutputB15;
 
-	using spi = SpiMaster2;
+	using Spi = SpiMaster2;
 }
 
 namespace rpi
@@ -96,11 +96,11 @@ initialize()
 	lora1::Sck::setOutput();
 	lora1::Sck::set();
 
-	lora1::spi::connect<lora1::Sck::Sck, lora1::Miso::Miso, lora1::Mosi::Mosi>();
-	lora1::spi::initialize<SystemClock, 1500_kHz>();
+	lora1::Spi::connect<lora1::Sck::Sck, lora1::Miso::Miso, lora1::Mosi::Mosi>();
+	lora1::Spi::initialize<SystemClock, 1500_kHz>();
 
-	lora2::spi::connect<lora2::Sck::Sck, lora2::Miso::Miso, lora2::Mosi::Mosi>();
-	lora2::spi::initialize<SystemClock, 1500_kHz>();
+	lora2::Spi::connect<lora2::Sck::Sck, lora2::Miso::Miso, lora2::Mosi::Mosi>();
+	lora2::Spi::initialize<SystemClock, 1500_kHz>();
 
 	rpi::Uart::connect<rpi::Tx::Tx, rpi::Rx::Rx>();
 	rpi::Uart::initialize<SystemClock, 115200_Bd>();
