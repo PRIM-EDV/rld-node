@@ -5,9 +5,20 @@
 // ----------------------------------------------------------------------------
 
 #include "board.hpp"
+#include "network/ra02.hpp"
 
 namespace Board
 {
+
+namespace lora1
+{
+    Ra02<Spi, Nss, D0> modem;
+}
+
+namespace lora2
+{
+    Ra02<Spi, Nss, D0> modem;
+}
 
 namespace rpi
 {

@@ -17,8 +17,8 @@ public:
 
     void
     initialize(){
-        RF_CALL_BLOCKING(modem1.initialize());
-        RF_CALL_BLOCKING(modem2.initialize());
+        RF_CALL_BLOCKING(lora1::modem.initialize());
+        RF_CALL_BLOCKING(lora2::modem.initialize());
     }
 
     bool
@@ -26,60 +26,21 @@ public:
         PT_BEGIN();
 
         while (1) {
-            PT_WAIT_UNTIL(lora1::D0::read() || lora2::D0::read());
-
-            if(lora1::D0::read())
-            {
-                PT_CALL(modem1.read(sx127x::Address::IrqFlags, data, 1));
-
-                if(data[0] & (uint8_t) sx127x::RegIrqFlags::PayloadCrcError){
-                    //XPCC_LOG_INFO <<  "Irq:" << data[0] <<  xpcc::endl;
-                    //PT_CALL(sx1278.getPayload(data, 4))
-                }else{
-                    PT_CALL(modem1.getPayload(data, 4));
-                    rpi::ioStream << data[0] << ":" << data[1]<< ":" << data[2]<< ":" << data[3] << modm::endl;
-                    // BLUETOOTH << data[0] << ":" << data[1]<< ":" << data[2]<< ":" << data[3] << xpcc::endl;
-                }
-
-                PT_CALL(modem1.write(sx127x::Address::IrqFlags, 0xff));
-            }
-
-            if(lora2::D0::read())
-            {
-                PT_CALL(modem1.read(sx127x::Address::IrqFlags, data, 1));
-
-                if(data[0] & (uint8_t) sx127x::RegIrqFlags::PayloadCrcError){
-                    //XPCC_LOG_INFO <<  "Irq:" << data[0] <<  xpcc::endl;
-                    //PT_CALL(sx1278.getPayload(data, 4))
-                }else{
-                    PT_CALL(modem1.getPayload(data, 4));
-                    rpi::ioStream << data[0] << ":" << data[1]<< ":" << data[2]<< ":" << data[3] << modm::endl;
-                    // BLUETOOTH << data[0] << ":" << data[1]<< ":" << data[2]<< ":" << data[3] << xpcc::endl;
-                }
-
-                PT_CALL(modem1.write(sx127x::Address::IrqFlags, 0xff));
-            }
+            PT_CALL(lora1::modem.getMessage());
+            PT_CALL(lora2::modem.getMessage());
         }
 
         PT_END();
     }
-private:
-    Ra02<lora1::Spi, lora1::Nss> modem1;
-    Ra02<lora2::Spi, lora2::Nss> modem2;
-
 } loraThread;
 
 int main()
 {
     Board::initialize();
-
 	loraThread.initialize();
-
 
     while (true)
     {
         loraThread.run();
-
-        // rpi::Uart::write(5);
     }
 }
