@@ -3,7 +3,8 @@
  */
 // ----------------------------------------------------------------------------
 
-#include <stdint.h>
+#ifndef COBS_HPP
+#define COBS_HPP
 
 namespace cobs
 {
@@ -23,6 +24,8 @@ namespace cobs
 
     inline uint8_t decode()
     {
-
+        return 0;
     }
 }
+
+#endif

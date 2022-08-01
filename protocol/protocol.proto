@@ -15,8 +15,8 @@ message Response {
     }
 }
 
-message NodeMessage {
-    string id = 1;
+message RldMessage {
+    int32 id = 1;
 
     oneof message{
         Request request = 2;
@@ -25,17 +25,20 @@ message NodeMessage {
 }
 
 message RldInfo {
-    
+    int32 id = 1;
+    int32 flags = 2;
+    int32 px = 3;
+    int32 py = 4;
 }
 
 message SetRldInfo {
     message Response {}
     message Request {
-
+        RldInfo info = 1;
     }
 
-    oneof message {
-        Request request = 1;
-        Response response = 2;
-    }
+    // oneof message {
+    //     Request request = 2;
+    //     Response response = 3;
+    // }
 }

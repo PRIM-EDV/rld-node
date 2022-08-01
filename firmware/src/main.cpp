@@ -19,8 +19,12 @@ int main()
     LoraThread<lora1::Spi, lora1::Nss, lora1::D0> loraThread1;
     LoraThread<lora2::Spi, lora2::Nss, lora2::D0> loraThread2;
 
+    loraThread1.initialize();
+    loraThread2.initialize();
+
     while (true)
     {
-        // loraThread.run();
+        loraThread1.run();
+        loraThread2.run();
     }
 }

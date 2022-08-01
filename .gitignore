@@ -6,4 +6,4 @@ firmware/modm
 firmware/build
 firmware/Sconstruct
 firmware/project.xml.log
-firmware/.sconsign.dblitesco
+firmware/.sconsign.dblites
