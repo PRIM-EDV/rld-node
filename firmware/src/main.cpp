@@ -22,8 +22,11 @@ int main()
     loraThread1.initialize();
     loraThread2.initialize();
 
+    // loraThread1.rpi_ostream = rpi::ioStream;
+
     while (true)
     {
+        rpi::ioStream << "peter";
         loraThread1.run();
         loraThread2.run();
     }
