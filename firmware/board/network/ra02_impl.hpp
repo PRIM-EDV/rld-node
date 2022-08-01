@@ -42,8 +42,8 @@ Ra02<SpiMaster, Cs, D0>::initialize()
 // ----------------------------------------------------------------------------
 
 template <typename SpiMaster, typename Cs, typename D0>
-ResumableResult<uint8_t*>
-Ra02<SpiMaster, Cs, D0>::getMessage()
+ResumableResult<uint8_t>
+Ra02<SpiMaster, Cs, D0>::getMessage(uint8_t* buffer)
 {
     RF_BEGIN();
 
@@ -51,10 +51,10 @@ Ra02<SpiMaster, Cs, D0>::getMessage()
         RF_WAIT_UNTIL(D0::read());
         RF_CALL(this->read(sx127x::Address::IrqFlags, this->status, 1));
         if(!(status[0] & (uint8_t) sx127x::RegIrqFlags::PayloadCrcError)) {
-            RF_CALL(this->getPayload(this->data, 4));
-            RF_RETURN(this->data);
+            RF_CALL(this->getPayload(buffer, 4));
+            RF_RETURN(4);
         }
     }
 
-    RF_END();
+    RF_END_RETURN(0);
 }

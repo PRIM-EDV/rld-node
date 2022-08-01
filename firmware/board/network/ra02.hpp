@@ -15,15 +15,13 @@ class Ra02 : public SX127x<SpiMaster, Cs>
 {
 
 public:
-	uint8_t data[8];
-
 	Ra02();
 
     ResumableResult<void>
 	initialize();
 
-	ResumableResult<uint8_t*>
-	getMessage();
+	ResumableResult<uint8_t>
+	getMessage(uint8_t* buffer);
 
 private:
 	uint8_t status[1];

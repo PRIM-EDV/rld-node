@@ -5,42 +5,22 @@
 
 #include "board/board.hpp"
 #include "board/network/ra02.hpp"
+#include "lib/cobs/cobs.hpp"
 #include "protocol/protocol.pb.hpp"
 
+#include "src/threads/lora.hpp"
 
 using namespace Board;
-
-class LoraThread : public modm::pt::Protothread, private modm::NestedResumable<2>
-{
-public:
-	uint8_t data[8];
-
-    void
-    initialize(){
-        RF_CALL_BLOCKING(lora1::modem.initialize());
-        RF_CALL_BLOCKING(lora2::modem.initialize());
-    }
-
-    bool
-    run(){
-        PT_BEGIN();
-
-        while (1) {
-            PT_CALL(lora1::modem.getMessage());
-            PT_CALL(lora2::modem.getMessage());
-        }
-
-        PT_END();
-    }
-} loraThread;
 
 int main()
 {
     Board::initialize();
-	loraThread.initialize();
+
+    LoraThread<lora1::Spi, lora1::Nss, lora1::D0> loraThread1;
+    LoraThread<lora2::Spi, lora2::Nss, lora2::D0> loraThread2;
 
     while (true)
     {
-        loraThread.run();
+        // loraThread.run();
     }
 }
