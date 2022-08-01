@@ -35,6 +35,8 @@ Ra02<SpiMaster, Cs, D0>::initialize()
 
     // // Set output power to 10 dBm (boost mode)
     RF_CALL(this->setOutputPower(0x0a));
+	RF_CALL(this->setOperationMode(sx127x::Mode::RecvCont));
+
 
     RF_END();
 }
