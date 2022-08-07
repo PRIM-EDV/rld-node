@@ -4,30 +4,31 @@
 #include <modm/processing/protothread.hpp>
 
 #include "board/board.hpp"
-#include "board/network/ra02.hpp"
 #include "lib/cobs/cobs.hpp"
+// #include "lib/uuid/uuid.h"
 #include "protocol/protocol.pb.hpp"
-
 #include "src/threads/lora.hpp"
 
 using namespace Board;
+
+namespace Board::lora1{
+    LoraThread<Spi, Nss, D0> thread;
+}
+
+namespace Board::lora2{
+    LoraThread<Spi, Nss, D0> thread;
+}
 
 int main()
 {
     Board::initialize();
 
-    LoraThread<lora1::Spi, lora1::Nss, lora1::D0> loraThread1;
-    LoraThread<lora2::Spi, lora2::Nss, lora2::D0> loraThread2;
-
-    loraThread1.initialize();
-    loraThread2.initialize();
-
-    // loraThread1.rpi_ostream = rpi::ioStream;
+    lora1::thread.initialize();
+    lora2::thread.initialize();
 
     while (true)
     {
-        rpi::ioStream << "peter";
-        loraThread1.run();
-        loraThread2.run();
+        lora1::thread.run();
+        lora2::thread.run();
     }
 }

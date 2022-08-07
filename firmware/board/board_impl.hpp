@@ -5,7 +5,6 @@
 // ----------------------------------------------------------------------------
 
 #include "board.hpp"
-#include "network/ra02.hpp"
 
 namespace Board
 {

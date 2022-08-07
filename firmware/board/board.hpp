@@ -102,24 +102,23 @@ initialize()
 	lora1::Nss::set();
 	lora1::Rst::set();
 
-	lora1::Spi::connect<lora1::Sck::Sck, lora1::Miso::Miso, lora1::Mosi::Mosi>();
-	lora1::Spi::initialize<SystemClock, 1500_kHz>();
-
 	lora2::Nss::setOutput();
 	lora2::Rst::setOutput();
 
 	lora2::Nss::set();
 	lora2::Rst::set();
 
-	lora2::Spi::connect<lora2::Sck::Sck, lora2::Miso::Miso, lora2::Mosi::Mosi>();
-	lora2::Spi::initialize<SystemClock, 1500_kHz>();
+	lora1::Spi::connect<lora1::Sck::Sck, lora1::Mosi::Mosi, lora1::Miso::Miso>();
+	lora1::Spi::initialize<SystemClock, 6000000ul>();
+
+	lora2::Spi::connect<lora2::Sck::Sck, lora2::Mosi::Mosi, lora2::Miso::Miso>();
+	lora2::Spi::initialize<SystemClock, 6000000ul>();
 
 	rpi::Uart::connect<rpi::Tx::Tx, rpi::Rx::Rx>();
-	rpi::Uart::initialize<SystemClock, 115200_Bd>();
+	rpi::Uart::initialize<SystemClock, 9600_Bd>();
 }
 
 }
 
 #include "board_impl.hpp"
-
 #endif
