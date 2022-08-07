@@ -25,6 +25,7 @@
     <module>modm:processing</module>
     <module>modm:build:scons</module>
     <module>modm:io</module>
+    <module>modm:printf</module>
     <module>modm:nanopb</module>
   </modules>
 </library>

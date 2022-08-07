@@ -61,8 +61,9 @@ public:
     void
     setRldInfo(uint8_t* data)
     {
-        char id[36];
+        char id[37];
         uuid::v4(id);
+
         // generate protobuf message
         RldInfo rld_info = RldInfo_init_zero;
         rld_info.id = data[0];
@@ -71,7 +72,7 @@ public:
         rld_info.py = ((data[2] & 0x03) << 8) | data[3];
 
         RldMessage rld_message = RldMessage_init_zero;
-        rld_message.id = message_id++;
+        rld_message.id.arg = id;
         rld_message.message.request.request.set_rld_info.info = rld_info;
 
         pb_ostream_t pb_ostream = pb_ostream_from_buffer(message_bufer, sizeof(message_bufer));
