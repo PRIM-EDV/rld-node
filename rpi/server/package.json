@@ -12,7 +12,8 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "proto:generate": "cpx ../../protocol/protocol.proto ./proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/protocol.proto"
+    "proto:generate": "cpx ../../protocol/protocol.proto ./proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/protocol.proto",
+    "proto:generate:docker": "cpx ../protocol/protocol.proto ./proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/protocol.proto"
   },
   "dependencies": {
     "@nestjs/common": "^7.5.1",
@@ -22,7 +23,8 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.3",
-    "serialport": "^10.4.0"
+    "serialport": "^10.4.0",
+    "ws": "^8.8.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.5.1",
@@ -44,6 +46,8 @@
     "ts-jest": "^26.4.3",
     "ts-loader": "^8.0.8",
     "ts-node": "^9.0.0",
+    "ts-proto": "^1.122.0",
+    "ts-protoc-gen": "^0.15.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.0.5"
   },

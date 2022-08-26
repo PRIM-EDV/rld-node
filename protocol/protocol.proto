@@ -16,7 +16,7 @@ message Response {
 }
 
 message RldMessage {
-    int32 id = 1;
+    string id = 1;
 
     oneof message{
         Request request = 2;
@@ -36,9 +36,4 @@ message SetRldInfo {
     message Request {
         RldInfo info = 1;
     }
-
-    // oneof message {
-    //     Request request = 2;
-    //     Response response = 3;
-    // }
 }
