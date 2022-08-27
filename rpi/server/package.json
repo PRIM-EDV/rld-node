@@ -12,8 +12,8 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "proto:generate": "cpx ../../protocol/protocol.proto ./proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/protocol.proto",
-    "proto:generate:docker": "cpx ../protocol/protocol.proto ./proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/protocol.proto"
+    "proto:generate": "cpx ../../protocol/* ./proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/protocol.proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/maptool.proto",
+    "proto:generate:docker": "cpx ../protocol/* ./proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/protocol.proto && protoc --ts_proto_opt=useOptionals=true --ts_proto_out=. ./proto/maptool.proto"
   },
   "dependencies": {
     "@nestjs/common": "^7.5.1",
