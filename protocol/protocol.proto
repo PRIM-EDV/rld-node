@@ -2,6 +2,7 @@
 // one message.
 
 syntax = "proto3";
+import "nanopb.proto";
 
 message Request {
     oneof request {
@@ -16,7 +17,7 @@ message Response {
 }
 
 message RldMessage {
-    string id = 1;
+    string id = 1 [(nanopb).max_size = 37, (nanopb).fixed_length = true];
 
     oneof message{
         Request request = 2;

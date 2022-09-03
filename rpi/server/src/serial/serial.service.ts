@@ -5,7 +5,7 @@ import { DelimiterParser } from '@serialport/parser-delimiter';
 import { Injectable } from '@nestjs/common';
 import { LoggingService } from 'src/logging/logging.service';
 import { WebsocketService } from 'src/websocket/websocket.service';
-import { RldInfo } from 'proto/protocol';
+import { RldInfo, RldMessage } from 'proto/protocol';
 import { Request } from 'proto/rld-node';
 
 const SERIAL_PORT = process.env.SERIAL_PORT ? process.env.SERIAL_PORT : '/dev/ttyS0';
@@ -31,15 +31,21 @@ export class SerialService {
     }
 
     private handleData(data: Buffer) {
-        const decoded = cobs.decode(data);
-        console.log(decoded);
+        try {
+            const decoded = cobs.decode(data);
+            const message = RldMessage.decode(decoded);
+            console.log(decoded)
+            console.log(message);
+        } catch {
+
+        }
     }
 
     public async setTracker(info: RldInfo) {
-        const req: Request = {
-            setTracker: { tracker: {id: info.id, postion: {x: info.px, y: info.py}} }
-        }
         try {
+            const req: Request = {
+                setTracker: { tracker: {id: info.id, postion: {x: info.px, y: info.py}} }
+            }
             this.websocket.request(req);
         } catch {
 

@@ -12,8 +12,8 @@ RUN npm install
 COPY ./rpi/server/src ./src
 COPY ./protocol ../protocol
 
+# Build protocol
 RUN npm run proto:generate:docker
-RUN npm run build
 
 # Run startscript
 COPY ./rpi/run.sh ./

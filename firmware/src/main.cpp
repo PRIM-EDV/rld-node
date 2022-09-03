@@ -5,7 +5,6 @@
 
 #include "board/board.hpp"
 #include "lib/cobs/cobs.hpp"
-// #include "lib/uuid/uuid.h"
 #include "protocol/protocol.pb.hpp"
 #include "src/threads/lora.hpp"
 
