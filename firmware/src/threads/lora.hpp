@@ -62,7 +62,7 @@ public:
     setRldInfo(uint8_t* data)
     {
         // generate protobuf message
-        RldInfo rld_info = RldInfo_init_zero;
+        RldInfo rld_info = RldInfo_init_default;
         rld_info.id = data[0];
         rld_info.flags = data[1] >> 4;
         rld_info.px = ((data[1] & 0x0f) << 6) | ((data[2] & 0xfc) >> 2);
@@ -72,15 +72,14 @@ public:
         uuid::v4(rld_message.id);
         rld_message.which_message = RldMessage_request_tag;
         rld_message.message.request.which_request = Request_set_rld_info_tag;
+        rld_message.message.request.request.set_rld_info.has_info = true;
         rld_message.message.request.request.set_rld_info.info = rld_info;
 
         pb_ostream_t pb_ostream = pb_ostream_from_buffer(message_bufer, sizeof(message_bufer));
         pb_encode(&pb_ostream, RldMessage_fields, &rld_message);
-        // Board::rpi::Uart::write(pb_ostream.bytes_written);
-        // Board::rpi::Uart::write(message_bufer, pb_ostream.bytes_written);
-        cobs_encode(message_bufer, pb_ostream.bytes_written, encoding_buffer);
+        uint8_t bytes_encoded = cobs_encode(message_bufer, pb_ostream.bytes_written, encoding_buffer);
 
-        Board::rpi::Uart::write(encoding_buffer, pb_ostream.bytes_written);
+        Board::rpi::Uart::write(encoding_buffer, bytes_encoded);
         Board::rpi::Uart::write('\0');
     };
 

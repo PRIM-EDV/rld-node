@@ -9,12 +9,22 @@
 
 inline uint8_t cobs_encode(uint8_t *data, uint8_t nbBytes, uint8_t *buffer)
 {
-    uint8_t *codep = buffer++; // Output code pointer
+    uint8_t *codep = buffer; // Output code pointer
     uint8_t dist = 1; // Code value
-
-    for (;nbBytes--; ++data)
+    uint8_t bytes = nbBytes;
+    buffer++;
+    for (;bytes--; ++data)
     {
-        (*data) ? *buffer++ = *data, ++dist : *codep = dist, dist = 1, codep = buffer, ++buffer;
+        if(*data) {
+            *buffer = *data;
+            buffer++;
+            ++dist;
+        } else {
+            *codep = dist;
+            dist = 1;
+            codep = buffer;
+            ++buffer;
+        }
     }
     *codep = dist;
 
